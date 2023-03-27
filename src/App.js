@@ -1,11 +1,12 @@
 import './App.css';
+import Dex from './components/Dex';
 
 function App() {
 	return (
-		<div>
-			{/* Menu at top */}
+		<div className='app'>
+			<div className='header'>PokeDex</div>
 			{/* Team */}
-			{/* Search for pokemon */}
+			<Dex />
 		</div>
   );
 }

@@ -1,0 +1,35 @@
+.dex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0.1rem;
+	padding: 0.3rem;
+
+
+}
+
+.load-button {
+	margin-bottom: 1rem;
+}
+
+.button {
+	background-color: #b68711;
+	color: #fdfdfd;
+	border-radius: 15px;
+	padding: 0.5rem 1.5rem;
+	text-align: center;
+	font-weight: bold;
+	width: fit-content;
+	text-align: center;
+}
+
+.button:hover {
+	cursor: pointer;
+	background-color: #deac2d;
+}
