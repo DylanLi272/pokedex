@@ -36,9 +36,9 @@ function Card(props) {
 		// eslint-disable-next-line
 	}, []);
 
-	const handleAddTeam = () => {
-		// TODO: add the stuff to add to team
-	};
+	// const handleAddTeam = () => {
+	// 	// TODO: add the stuff to add to team
+	// };
 
 	if (content === null)
 		return (
@@ -66,7 +66,7 @@ function Card(props) {
 							<div key={content.name+'-type-'+type} className={'poke-type '+type}>Type: {type}</div>)}
 					</div>
 				</div>
-				<div className="button add-button" onClick={handleAddTeam}>+ to team</div>
+				{/* <div className="button add-button" onClick={handleAddTeam}>+ to team</div> */}
 			</div>
 		);
 

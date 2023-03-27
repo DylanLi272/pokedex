@@ -3,3 +3,17 @@
 	flex-direction: column;
 	align-items: center;
 }
+
+.header {
+	font-weight: bolder;
+	font-size: 3rem;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	padding: 0.5rem;
+	margin: 1.2rem 0;
+}
+
+.hline {
+	width: 98vw;
+	padding: 0.2rem;
+	background-color: #b68711;
+}

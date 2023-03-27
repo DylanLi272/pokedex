@@ -5,6 +5,7 @@ function App() {
 	return (
 		<div className='app'>
 			<div className='header'>PokeDex</div>
+			<div className='hline'></div>
 			{/* Team */}
 			<Dex />
 		</div>
