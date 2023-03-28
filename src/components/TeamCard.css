@@ -1,0 +1,42 @@
+
+.team-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	margin: 1rem;
+	padding: 1rem;
+
+	background-color: #cccccc;
+	border-radius: 1rem;
+}
+
+.attributes {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.poke-attr {
+	padding: 0.3rem 0;
+	margin: 0.3rem 0;
+}
+
+.poke-name {
+	font-weight: bold;
+}
+
+.poke-name::first-letter {
+    text-transform:capitalize;
+}
+
+.remove-button {
+	margin-top: 1rem;
+	margin-bottom: 0.1rem;
+	background-color: #B02121;
+}
+.remove-button:hover {
+	background-color: #f03939;
+}

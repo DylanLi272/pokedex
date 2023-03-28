@@ -7,7 +7,6 @@ function Dex() {
 	const [offset, setOffset] = useState(0);
 
 	const handleFetch = (response) => {
-		//console.log(response.status)
 		return response.json();
 	};
 
@@ -45,6 +44,7 @@ function Dex() {
 	return (
 		<div className='dex'>
 			{/* TODO: check for null or network error and display smth different */}
+			
 			<div className='cards'>{pokemonCards}</div>
 			<div className='button load-button' onClick={handleLoadMore}>Load More...</div>
 		</div>
