@@ -19,7 +19,7 @@ function Team() {
 			setCards(team);
 		});
 	}
-	
+
 	useEffect(() => {
 		readTeam();
 	}, []);

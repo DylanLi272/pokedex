@@ -1,4 +1,3 @@
-
 .team-card {
 	display: flex;
 	flex-direction: column;
@@ -29,7 +28,7 @@
 }
 
 .poke-name::first-letter {
-    text-transform:capitalize;
+	text-transform: capitalize;
 }
 
 .remove-button {
@@ -37,6 +36,7 @@
 	margin-bottom: 0.1rem;
 	background-color: #B02121;
 }
+
 .remove-button:hover {
 	background-color: #f03939;
 }

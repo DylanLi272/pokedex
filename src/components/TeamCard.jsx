@@ -36,10 +36,10 @@ function TeamCard(props) {
 	const handleSnapshot = (snap, path) => {
 		for (var key in snap.val()) {
 			if (snap.val()[key] === props.name) {
-				const dataRef = ref(database, path+'/'+key)
+				const dataRef = ref(database, path + '/' + key)
 				remove(dataRef)
-				.then(() => { console.log(props.name + " has been removed from team") })
-				.catch((error) => { console.log(error) })
+					.then(() => { console.log(props.name + " has been removed from team") })
+					.catch((error) => { console.log(error) })
 				break;
 			}
 		}

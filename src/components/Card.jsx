@@ -36,14 +36,14 @@ function Card(props) {
 			.catch(handleError);
 		// eslint-disable-next-line
 	}, []);
-	
-	const handleSnapshot = (snap, dataRef) => {	
+
+	const handleSnapshot = (snap, dataRef) => {
 		const pokeList = [];
 		for (var key in snap.val()) {
 			pokeList.push(snap.val()[key]);
 		}
 		// console.log(pokeList);
-		
+
 		if (pokeList.includes(props.name)) {
 			console.log('Pokemon already on team');
 		}
@@ -69,8 +69,8 @@ function Card(props) {
 	const addTeam = () => {
 		const dataRef = ref(database, '/team');
 		get(dataRef)
-		.then((snap) => {handleSnapshot(snap, dataRef)})
-		.catch((error) => { console.log(error) });
+			.then((snap) => { handleSnapshot(snap, dataRef) })
+			.catch((error) => { console.log(error) });
 	};
 
 	if (content === null)

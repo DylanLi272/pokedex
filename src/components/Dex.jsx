@@ -11,10 +11,10 @@ function Dex() {
 	};
 
 	const handleResponse = (responseJSON) => {
-		const cards = responseJSON.results.map((item) => <Card key={item.name} name={item.name} url={item.url}/>);
+		const cards = responseJSON.results.map((item) => <Card key={item.name} name={item.name} url={item.url} />);
 		setPokemonCards(pokemonCards.concat(cards));
 	};
-	
+
 	const handleError = (error) => {
 		console.log(error);
 		setPokemonCards('Network Error');
@@ -23,9 +23,9 @@ function Dex() {
 	useEffect(() => {
 		const url = 'https://pokeapi.co/api/v2/pokemon?limit=10&offset=0';
 		fetch(url)
-		.then(handleFetch)
-		.then(handleResponse)
-		.catch(handleError);
+			.then(handleFetch)
+			.then(handleResponse)
+			.catch(handleError);
 		setOffset(10);
 		// eslint-disable-next-line
 	}, []);
@@ -35,32 +35,32 @@ function Dex() {
 		if (offset > 1271) {
 			url = 'https://pokeapi.co/api/v2/pokemon?limit=10&offset=' + (offset);
 			fetch(url)
-			.then(handleFetch)
-			.then(handleResponse)
-			.catch(handleError);
+				.then(handleFetch)
+				.then(handleResponse)
+				.catch(handleError);
 
-			url = `https://pokeapi.co/api/v2/pokemon?limit=${1281-offset}&offset=${0}`;
+			url = `https://pokeapi.co/api/v2/pokemon?limit=${1281 - offset}&offset=${0}`;
 			fetch(url)
-			.then(handleFetch)
-			.then(handleResponse)
-			.catch(handleError);
+				.then(handleFetch)
+				.then(handleResponse)
+				.catch(handleError);
 
-			setOffset(1281-offset);
+			setOffset(1281 - offset);
 		}
 		else {
 			url = 'https://pokeapi.co/api/v2/pokemon?limit=10&offset=' + (offset);
 			fetch(url)
-			.then(handleFetch)
-			.then(handleResponse)
-			.catch(handleError);
+				.then(handleFetch)
+				.then(handleResponse)
+				.catch(handleError);
 
-			setOffset(offset+10);
+			setOffset(offset + 10);
 		}
-		
+
 	}
 
 	const handleRandomize = (responseJSON) => {
-		const cards = responseJSON.results.map((item) => <Card key={item.name} name={item.name} url={item.url}/>);
+		const cards = responseJSON.results.map((item) => <Card key={item.name} name={item.name} url={item.url} />);
 		setPokemonCards(cards);
 	};
 
@@ -68,11 +68,11 @@ function Dex() {
 		const off = Math.floor(Math.random() * 1272);
 		const url = 'https://pokeapi.co/api/v2/pokemon?limit=10&offset=' + off;
 		fetch(url)
-		.then(handleFetch)
-		.then(handleRandomize)
-		.catch(handleError);
-		
-		setOffset(off+10);
+			.then(handleFetch)
+			.then(handleRandomize)
+			.catch(handleError);
+
+		setOffset(off + 10);
 	};
 
 	// can add a search bar to look for specific cards

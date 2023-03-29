@@ -11,7 +11,7 @@ function App() {
 			<div className='hline'></div>
 			<Dex />
 		</div>
-  );
+	);
 }
 
 export default App;
