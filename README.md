@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Github Repo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Github repository for this project can be found at https://github.com/DylanLi272/pokedex.git
 
 ## Available Scripts
 
