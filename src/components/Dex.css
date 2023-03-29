@@ -12,12 +12,10 @@
 	justify-content: center;
 	margin: 0.1rem;
 	padding: 0.3rem;
-
-
 }
 
 .load-button {
-	margin-bottom: 1rem;
+	margin: 0.1rem 0.5rem 1rem 0.5rem;
 }
 
 .button {
@@ -35,4 +33,18 @@
 .button:hover {
 	cursor: pointer;
 	background-color: #deac2d;
+}
+
+.bottom-buttons {
+	display: flex;
+}
+
+.randomize-button {
+	background-color: black;
+	color: white;
+}
+
+.randomize-button:hover {
+	background-color: white;
+	color: black;
 }
